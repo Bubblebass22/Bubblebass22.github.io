@@ -89,3 +89,9 @@ function scrollToTop() {
     }
 });
 
+document.querySelector('.scroll').addEventListener('click', function (event) {
+    event.preventDefault();  // Previene el comportamiento predeterminado del enlace
+    var aboutSection = document.getElementById('about');
+    aboutSection.scrollIntoView({ behavior: 'smooth' });
+});
+
